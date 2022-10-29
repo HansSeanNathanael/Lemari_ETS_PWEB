@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lemari</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <div class="row m-0">
+            <div class="col-12" id="header">
+                <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+                    <div class="container">
+                        <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                        <ul class="nav navbar-nav ms-auto w-auto justify-content-end">
+                            <li class="nav-item" id="button-masuk">
+                                <button id="button-masuk" class="btn btn-dark primary-font">Masuk</button>
+                            </li>
+                            <li class="nav-item dropdown" id="dropdown-button-akun">
+                                <a class="nav-link" id="dropdown-akun" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                    <div id="nama-akun" class="primary-font d-flex align-items-center">Akun</div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-akun">
+                                    <li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Kelola akun</button></li>
+                                    <li><p class="dropdown-item primary-font fs-6">Simpanan: Rp 12.000.000,-</p></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><button id="button-keluar" class="dropdown-item primary-font fs-6">Keluar</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr/>
+            <div class="container d-flex flex-row col-md-6 my-3 justify-content-center">
+                <div class="row w-100">
+                    <div class="container my-4">
+                        <p class="fs-3 text-center primary-font fw-bold">Tentang Kami</p>
+                        <p class="fs-5 primary-font mt-2" style="text-align: justify; text-justify: inter-word;">Kami adalah koperasi simpan pinjam yaitu badan lembaga koperasi yang memberikan layanan penyimpanan dan pinjaman dana kepada setiap anggotanya. Kami tidak mengejar keuntungan yang besar, setiap hasil keuntungan koperasi akan dikembalikan kepada setiap anggota sesuai dengan ketentuan bagi hasil yang disepakati pada rapat tahunan yang disetujui setiap anggota.</p>
+                    </div>
+                    <div class="container my-4">
+                        <p class="fs-3 text-center primary-font fw-bold">Cara Bergabung</p>
+                        <p class="fs-5 primary-font mt-2" style="text-align: center; text-justify: inter-word;">Lihat cara <button class="btn btn-dark primary-font" onclick="">bergabung</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 m-0" style="background-color: #e3ffb0;" id="footer">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Lemari</h5>
+                            <p style="color: #1f1f1f">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                                voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">links</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1">
+                                    <a href="#!" style="color: #1f1f1f;">Pertanyaan</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="#!" style="color: #1f1f1f;">Blog</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="#!" style="color: #1f1f1f;">Dasar Hukum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <p class="mb-1 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Jam kerja</p>
+                            <table class="table" style="color: #1f1f1f; border-color: #666;">
+                                <tbody>
+                                    <tr>
+                                        <td>Setiap hari:</td>
+                                        <td>08.00 - 21.00 WIB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: #ffd77a;">
+                    © 2022 Copyright: Lemari</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    </head>
+    <body>
+        <div class="container " style="height: 100vh;">
+            <div class="row align-items-center h-100 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <form id="form-login">
+                        <div class="form-outline mb-4 d-flex justify-content-center">
+                            <img src="images/logo.png" alt="Logo Lemari"/>
+                        </div>
+
+                        <!-- Input nama -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label primary-font" for="input-nama">Nama</label>
+                            <input type="text" name="nama" id="input-nama" class="form-control required" />
+                        </div>
+                    
+                        <!-- Input pin -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label primary-font" for="input-pin">Pin</label>
+                            <input type="password" name="pin" id="input-pin" class="form-control required" />
+                        </div>
+                    
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="col">
+                            <a class="d-flex justify-content-end" href="#!">Lupa pin?</a>
+                        </div>
+                    
+                        <!-- Submit button -->
+                        <div class="col d-flex justify-content-center mt-3">
+                            <button type="button" class="btn btn-primary btn-block mb-4" onclick="login()">Sign in</button>
+                        </div>
+                    
+                        <!-- Register buttons -->
+                        <div class="col d-flex justify-content-center text-center">
+                            <p>Bukan anggota? <a href="#!">Cara Bergabung</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="login.js"></script>
+    </body>
+</html>
