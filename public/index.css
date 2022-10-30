@@ -9,3 +9,16 @@
 .simpanan {
     font-size: 12px;
 }
+
+.blog-card {
+    width: 24rem;
+}
+
+.blog-card-text {
+    height: auto;
+
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
