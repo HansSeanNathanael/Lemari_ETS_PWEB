@@ -18,8 +18,8 @@ $(document).ready(function() {
             nama: {
                 alphanumeric: "Format hanya huruf dan angka",
                 diawaliHuruf: "Diawali oleh alfabet",
-                minlength: "Panjang nama 8-12 karakter",
-                maxlength: "Panjang pin 8-12 karakter",
+                minlength: "Panjang nama 8-16 karakter",
+                maxlength: "Panjang nama 8-16 karakter",
                 required: "Kolom harus diisi"
             },
             pin: {

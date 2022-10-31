@@ -1,0 +1,43 @@
+#header {
+    background-color: orange;
+}
+
+.topic {
+    border: 1.5px black solid;
+    border-radius: 10px;
+    background-color: rgb(217, 226, 241);
+}
+
+.topic-header {
+    /* border-radius: 10px 10px 0px 0px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.topic > ul > li > a {
+    text-decoration: none;
+}
+
+.topic > ul > li > a:hover {
+    color: blue;
+}
+
+.topic > ul > li > a {
+    color: black;
+}
+
+#content > .card {
+    height: 10rem;
+}
+
+.card-body {
+    overflow-y: hidden;
+}
+
+.card-title > a {
+    text-decoration: none;
+}
+
+.card-title > a:hover {
+    text-decoration: underline;
+}
