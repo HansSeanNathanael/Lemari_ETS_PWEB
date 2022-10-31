@@ -48,4 +48,8 @@ $(document).ready(function() {
     $("#button-pinjaman").click(function() {
         window.location.href = "./pinjaman.html";
     });
+
+    $("#button-dasar-hukum").click(function() {
+        window.location.href = "./hukum.html";
+    });
 });
