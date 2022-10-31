@@ -32,7 +32,7 @@ $(document).ready(function() {
         $("#menu-akun-login").show();
         $("#nama-akun").html(sessionStorage.getItem("akun"));
 
-        $("#nama-akun").html(sessionStorage.getItem("akun"));
+        $("#nama-akun-simpanan").html(sessionStorage.getItem("akun"));
     }
     else {
         $("#button-masuk").show();
@@ -43,5 +43,9 @@ $(document).ready(function() {
     
     $("#button-simpanan").click(function() {
         window.location.href = "./simpanan.html";
+    });
+
+    $("#button-pinjaman").click(function() {
+        window.location.href = "./pinjaman.html";
     });
 });
