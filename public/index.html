@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lemari</title>
+        <title>Lemari | Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.js"></script>
         <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./index.css">
+		<link rel="stylesheet" type="text/css" href="./css/font.css">
     </head>
-    <body>
-        <div class="row m-0">
-            <div class="col-12" id="header">
-                <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-                    <div class="container">
-                        <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
-                        <ul class="nav navbar-nav ms-auto w-auto justify-content-end">
-                            <li class="nav-item" id="button-masuk">
-                                <button id="button-masuk" class="btn btn-dark primary-font">Masuk</button>
-                            </li>
-                            <li class="nav-item dropdown" id="dropdown-button-akun">
-                                <a class="nav-link" id="dropdown-akun" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                    <div id="nama-akun" class="primary-font d-flex align-items-center">Akun</div>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-akun">
-                                    <li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Kelola akun</button></li>
-                                    <li><p class="dropdown-item primary-font fs-6">Simpanan: Rp 12.000.000,-</p></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><button id="button-keluar" class="dropdown-item primary-font fs-6">Keluar</button></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <hr/>
+    <body class="d-flex flex-column min-vh-100">
+        <div class="col-md-12 m-0 p-0" id="header">
+            <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+                <div class="container">
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    <ul class="nav navbar-nav ms-auto w-auto justify-content-end">
+                        <li class="nav-item" id="button-masuk">
+                            <button id="button-masuk" class="btn btn-dark primary-font">Masuk</button>
+                        </li>
+                        <li class="nav-item dropdown" id="dropdown-button-akun">
+                            <a class="nav-link" id="dropdown-akun" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <div id="nama-akun" class="primary-font d-flex align-items-center">Akun</div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-akun">
+                                <li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Kelola akun</button></li>
+                                <li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Detail Simpanan</button></li>
+                                <li><p class="dropdown-item primary-font fs-6">Simpanan: Rp 12.000.000,-</p></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button id="button-keluar" class="dropdown-item primary-font fs-6">Keluar</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <hr class="m-0"/>
+        <div class="row m-0 flex-grow-1">
             <div class="container d-flex flex-row col-md-10 my-3 justify-content-center">
                 <div class="row w-100">
+                    <div class="container my-4" id="menu-akun-login">
+                        <div class="container col-md-6">
+                            <p class="fs-5 primary-font my-0" id="nama-akun"></p>
+                            <div class="d-flex">
+                                <div class="w-auto">
+                                    <p class="fs-6 primary-font my-0">Nomor Anggota</p>
+                                    <p class="fs-6 primary-font my-0">Simpanan </p>
+                                    <p class="fs-6 primary-font my-0">Pinjaman </p>
+                                </div>
+                                <div class="w-auto mx-3">
+                                    <p class="fs-6 primary-font my-0">#202104010001</p>
+                                    <p class="fs-6 primary-font my-0">Rp 12.000.000,-</p>
+                                    <p class="fs-6 primary-font my-0">Rp 0,-</p>
+                                </div>
+                            </div>
+                            <div class="wrapper d-flex flex-wrap justify-content-left">
+                                <button class="btn btn-dark col-md-3 mx-1 my-1 primary-font" id="button-simpanan">Simpanan</button>
+                                <button class="btn btn-dark col-md-3 mx-1 my-1 primary-font" id="button-pinjaman">Pinjaman</button>
+                                <button class="btn btn-dark col-md-3 mx-1 my-1 primary-font" id="button-laporan">Laporan</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container my-4">
                         <p class="fs-3 text-center primary-font fw-bold">Tentang Kami</p>
                         <div class="container col-md-6">
@@ -47,7 +71,7 @@
                     </div>
                     <div class="container my-4">
                         <p class="fs-3 text-center primary-font fw-bold">Cara Bergabung</p>
-                        <p class="fs-5 primary-font mt-2" style="text-align: center; text-justify: inter-word;">Lihat cara <button class="btn btn-dark primary-font" onclick="">bergabung</button></p>
+                        <p class="fs-5 primary-font mt-2" style="text-align: center; text-justify: inter-word;">Lihat cara <button class="btn btn-dark primary-font" id="button-bergabung">bergabung</button></p>
                     </div>
                     <div class="container my-4">
                         <p class="fs-3 text-center primary-font fw-bold">Informasi Tambahan</p>
@@ -56,15 +80,18 @@
                                 Lihat Informasi Tambahan
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdown-informasi-tambahan">
-                                <li><a class="dropdown-item" href="#">Dasar Hukum</a></li>
-                                <li><a class="dropdown-item" href="#">Pertaruan</a></li>
-                                <li><a class="dropdown-item" href="#">Hak dan Kewajiban Anggota</a></li>
-                                <li><a class="dropdown-item" href="#">Lokasi</a></li>
+                                <li><button class="dropdown-item my-1">Dasar Hukum</button></li>
+                                <li><button class="dropdown-item my-1" id="halaman-pertaruan">Pertaruan</button></li>
+                                <li><button class="dropdown-item my-1">Hak dan Kewajiban Anggota</button></li>
+                                <li><button class="dropdown-item my-1">Lokasi</button></li>
                             </ul>
                         </div>
                     </div>
                     <div class="container my-4">
-                        <p class="fs-3 text-center primary-font fw-bold">Blog Terbaru</p>
+                        <div class="w-100 text-center">
+                            <p class="fs-3 text-center primary-font fw-bold">Blog Terbaru</p>
+                            <button class="btn btn-dark primary-font center" id="button-blog">Lihat semua</button>
+                        </div>
                         <div class="w-100 justify-content-start d-flex flex-row flex-nowrap overflow-scroll">
                             <div class="d-flex flex-row m-2">
                                 <div class="card blog-card">
@@ -72,6 +99,7 @@
                                         <p class="card-title fs-5 fw-bold w-100 text-truncate my-0">Rapat Tahun 2023</p>
                                         <hr>
                                         <p class="card-text blog-card-text fs-6 w-100">Rapat program kerja tahun 2023 pada tanggal 21 November 2022 dihadiri oleh 120 anggota koperasi dan berlangsung selama 4 jam. Hasil dari rapat tersebut menghasilkan kesepakatan sebagai berikut yang tertuang di dalam surat keputuran nomor SK/Lemari/2022/012</p>
+                                        <a class="stretched-link" href="#" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -81,6 +109,7 @@
                                         <p class="card-title fs-5 fw-bold w-100 text-truncate my-0">Laporan Hasil Tahun 2021</p>
                                         <hr>
                                         <p class="card-text blog-card-text fs-6 w-100">Dengan ini kami para pengurus koperasi menyampaikan laporan hasil pendapatan tahun 2021 adalah sebagai berikut.</p>
+                                        <a class="stretched-link" href="#" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -90,6 +119,7 @@
                                         <p class="card-title fs-5 fw-bold w-100 text-truncate my-0">Rapat Tahun 2022</p>
                                         <hr>
                                         <p class="card-text blog-card-text fs-6 w-100">Rapat program kerja tahun 2022 pada tanggal 13 November 2021 dihadiri oleh 95 anggota koperasi menghasilkan kesepakatan sebagai berikut yang tertuang di dalam surat keputuran nomor SK/Lemari/2021/011</p>
+                                        <a class="stretched-link" href="#" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -99,6 +129,7 @@
                                         <p class="card-title fs-5 fw-bold w-100 text-truncate my-0">Hasil Pemilihan Pengurus Periode 2022-2027</p>
                                         <hr>
                                         <p class="card-text blog-card-text fs-6 w-100">Hasil pemilu pemilihan pengurus telah selesai, setiap anggota yang terpilih diharapkan dapat menjalankan amanat sebaik-baiknya. Berikut adalah hasil pemilihan pengurus baru.</p>
+                                        <a class="stretched-link" href="#" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -106,45 +137,45 @@
                     </div>
                 </div>
             </div>
-            <div class="p-0 m-0" style="background-color: #e3ffb0;" id="footer">
-                <div class="container p-4">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Lemari</h5>
-                            <p style="color: #1f1f1f">
-                                Kami adalah koperasi simpan pinjam yang memiliki misi untuk memberikan layanan simpan pinjam yang terbaik bagi semua anggota.
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">links</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-1">
-                                    <a href="#!" style="color: #1f1f1f;">Pertanyaan</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a href="#!" style="color: #1f1f1f;">Dasar Hukum</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a href="#!" style="color: #1f1f1f;">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <p class="mb-1 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Jam kerja</p>
-                            <table class="table" style="color: #1f1f1f; border-color: #666;">
-                                <tbody>
-                                    <tr>
-                                        <td>Setiap hari:</td>
-                                        <td>08.00 - 21.00 WIB</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+        </div>
+        <div class="p-0 m-0" style="background-color: #e3ffb0;" id="footer">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Lemari</h5>
+                        <p style="color: #1f1f1f">
+                            Kami adalah koperasi simpan pinjam yang memiliki misi untuk memberikan layanan simpan pinjam yang terbaik bagi semua anggota.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Pertanyaan</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Dasar Hukum</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="mb-1 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Jam kerja</p>
+                        <table class="table" style="color: #1f1f1f; border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Setiap hari:</td>
+                                    <td>08.00 - 21.00 WIB</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="text-center p-3" style="background-color: #ffd77a;">
-                    © 2022 Copyright: Lemari</a>
-                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: #ffd77a;">
+                © 2022 Copyright: Lemari</a>
             </div>
         </div>
         <script type="text/javascript" src="./index.js"></script>

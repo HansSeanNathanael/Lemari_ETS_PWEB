@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./bootstrap/js/bootstrap.bundle.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./bootstrap/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="blog.css" />
-    <title>Lemari | Blog</title>
-  </head>
-  <body>
-    <div class="m-0">
-      <div class="col-12" id="header">
-        <nav
-          class="navbar navbar-light navbar-expand-md bg-faded justify-content-center"
-        >
-          <div class="container">
-            <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
-          </div>
-        </nav>
-      </div>
-      <div class="row g-1.5">
-        <div class="container col-2 mt-5 ms-5 me-2 p-0 topic">
-          <div class="container-fluid m-2 topic-header">Topik</div>
-          <hr />
-          <ul>
-            <li>
-              <a href="#">Kegiatan</a>
-            </li>
-            <li>
-              <a href="#">Rapat</a>
-            </li>
-            <li>
-              <a href="#">lorem</a>
-            </li>
-            <li>
-              <a href="#">ipsum</a>
-            </li>
-            <li>
-              <a href="#">sit dolor</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="container-fluid mx-auto mt-5 col-8" id="content">
-          <div class="card pb-3 mb-3">
-            <div class="card-header" id="tgl">
-              <strong> 20 Agustus 2022 </strong>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="#"> JUDUL KEGIATAN </a>
-              </h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                natus, quidem iste, beatae reprehenderit quibusdam culpa non
-                saepe dolorum hic ipsum quod, eius animi nesciunt fugiat
-                consequatur at praesentium eligendi. Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Corporis, ipsa autem libero itaque
-                repellendus eveniet odit quas. Eaque eum inventore, facilis ad
-                soluta nobis, nam quibusdam quis laudantium eveniet quos!
-              </p>
-            </div>
-          </div>
-          <div class="card pb-3 mb-3">
-            <div class="card-header" id="tgl">
-              <strong> 20 Agustus 2022 </strong>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="#"> JUDUL KEGIATAN </a>
-              </h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                natus, quidem iste, beatae reprehenderit quibusdam culpa non
-                saepe dolorum hic ipsum quod, eius animi nesciunt fugiat
-                consequatur at praesentium eligendi. Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Corporis, ipsa autem libero itaque
-                repellendus eveniet odit quas. Eaque eum inventore, facilis ad
-                soluta nobis, nam quibusdam quis laudantium eveniet quos!
-              </p>
-            </div>
-          </div>
-          <div class="card pb-3 mb-3">
-            <div class="card-header" id="tgl">
-              <strong>20 Agustus 2022</strong>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="#"> JUDUL KEGIATAN </a>
-              </h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                natus, quidem iste, beatae reprehenderit quibusdam culpa non
-                saepe dolorum hic ipsum quod, eius animi nesciunt fugiat
-                consequatur at praesentium eligendi. Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Corporis, ipsa autem libero itaque
-                repellendus eveniet odit quas. Eaque eum inventore, facilis ad
-                soluta nobis, nam quibusdam quis laudantium eveniet quos!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<title>Lemari | Blog</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			type="text/javascript"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="./bootstrap/js/bootstrap.bundle.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./bootstrap/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="./css/blog.css"/>
+		<link rel="stylesheet" href="./css/font.css"/>
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<div class="col-md-12 m-0 p-0" id="header">
+			<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+				<div class="container">
+					<a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+					<ul class="nav navbar-nav ms-auto w-auto justify-content-end">
+						<li class="nav-item" id="button-masuk">
+							<button id="button-masuk" class="btn btn-dark primary-font">Masuk</button>
+						</li>
+						<li class="nav-item dropdown" id="dropdown-button-akun">
+							<a class="nav-link" id="dropdown-akun" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+								<div id="nama-akun" class="primary-font d-flex align-items-center">Akun</div>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-akun">
+								<li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Kelola akun</button></li>
+								<li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Detail Simpanan</button></li>
+								<li><p class="dropdown-item primary-font fs-6">Simpanan: Rp 12.000.000,-</p></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><button id="button-keluar" class="dropdown-item primary-font fs-6">Keluar</button></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<hr class="m-0"/>
+		<div class="row m-0 flex-grow-1">
+			<div class="container d-flex flex-row col-md-10 my-3 justify-content-center">
+				<div class="my-4 col-md-6">
+					<div class="row">
+						<div class="row" id="block-blog">
+							<p class="fs-5 fw-bold primary-font mx-0 my-2">Tahun 2022</p>
+							<div class="row m-0 p-0">
+								<div class="card mb-3 blog-card">
+									<div class="card-header">
+										<p class="fs-6 fw-bold m-0 primary-font">20 Agustus 2022</p>
+									</div>
+									<div class="card-body">
+										<p class="card-title">
+											<p class="fs-5 fw-bold m-0 primary-font">Rapat Tahun 2023</p>
+										</p>
+										<p class="card-text primary-font my-1">
+											Rapat program kerja tahun 2023 pada tanggal 21 November 2022 dihadiri oleh 120 anggota koperasi dan berlangsung selama 4 jam. Hasil dari rapat tersebut menghasilkan kesepakatan sebagai berikut yang tertuang di dalam surat keputuran nomor SK/Lemari/2022/012
+										</p>
+										<a class="stretched-link my-0" href="#" target="_blank"></a>
+									</div>
+								</div>
+								<div class="card mb-3 blog-card">
+									<div class="card-header">
+										<p class="fs-6 fw-bold m-0 primary-font">20 Agustus 2022</p>
+									</div>
+									<div class="card-body">
+										<p class="card-title">
+											<p class="fs-5 fw-bold m-0 primary-font">Laporan Hasil Tahun 2021</p>
+										</p>
+										<p class="card-text primary-font my-1">
+											Dengan ini kami para pengurus koperasi menyampaikan laporan hasil pendapatan tahun 2021 adalah sebagai berikut.
+										</p>
+										<a class="stretched-link my-0" href="#" target="_blank"></a>
+									</div>
+								</div>
+								<div class="card mb-3">
+									<div class="card-header">
+										<p class="fs-6 fw-bold m-0 primary-font">20 Agustus 2022</p>
+									</div>
+									<div class="card-body">
+										<p class="card-title">
+											<p class="fs-5 fw-bold m-0 primary-font">Rapat Tahun 2022</p>
+										</p>
+										<p class="card-text primary-font my-1">
+											Rapat program kerja tahun 2022 pada tanggal 13 November 2021 dihadiri oleh 95 anggota koperasi menghasilkan kesepakatan sebagai berikut yang tertuang di dalam surat keputuran nomor SK/Lemari/2021/011
+										</p>
+										<a class="stretched-link my-0" href="#" target="_blank"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container d-flex justify-content-center">
+							<nav aria-label="...">
+								<ul class="pagination primary-font">
+									<li class="page-item page-disabled">
+										<a class="page-link paging-button" href="#" tabindex="-1" aria-disabled="true" aria-label="Previous">
+										  	<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item page-active active aria-current="page""><a class="page-link" href="#">1</a></li>
+									<li class="page-item page-active"><a class="page-link paging-button" href="#">2</a></li>
+									<li class="page-item page-active"><a class="page-link paging-button" href="#">3</a></li>
+									<li class="page-item page-active">
+										<a class="page-link paging-button" href="#" aria-label="Next">
+											  <span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="p-0 m-0" style="background-color: #e3ffb0;" id="footer">
+			<div class="container p-4">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Lemari</h5>
+						<p style="color: #1f1f1f">
+							Kami adalah koperasi simpan pinjam yang memiliki misi untuk memberikan layanan simpan pinjam yang terbaik bagi semua anggota.
+						</p>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">links</h5>
+						<ul class="list-unstyled mb-0">
+							<li class="mb-1">
+								<a href="#!" style="color: #1f1f1f;">Pertanyaan</a>
+							</li>
+							<li class="mb-1">
+								<a href="#!" style="color: #1f1f1f;">Dasar Hukum</a>
+							</li>
+							<li class="mb-1">
+								<a href="#!" style="color: #1f1f1f;">Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<p class="mb-1 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Jam kerja</p>
+						<table class="table" style="color: #1f1f1f; border-color: #666;">
+							<tbody>
+								<tr>
+									<td>Setiap hari:</td>
+									<td>08.00 - 21.00 WIB</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="text-center p-3" style="background-color: #ffd77a;">
+				© 2022 Copyright: Lemari</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="./blog.js"></script>
+	</body>
 </html>

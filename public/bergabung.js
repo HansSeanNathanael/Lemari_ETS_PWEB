@@ -7,22 +7,10 @@ $(document).ready(function() {
     $("#button-kelola-akun").click(function() {
 
     });
-
-    $("#halaman-pertaruan").click(function() {
-        window.location.href = "./peraturan.html";
-    });
-
-    $("#button-bergabung").click(function() {
-        window.location.href = "./bergabung.html";
-    });
     
     $("#button-keluar").click(function() {
         sessionStorage.removeItem("akun");
         window.location.reload();
-    });
-
-    $("#button-blog").click(function() {
-        window.location.href = "./blog.html";
     });
 
     if (sessionStorage.getItem("akun") != null) {
@@ -31,8 +19,6 @@ $(document).ready(function() {
 
         $("#menu-akun-login").show();
         $("#nama-akun").html(sessionStorage.getItem("akun"));
-
-        $("#nama-akun").html(sessionStorage.getItem("akun"));
     }
     else {
         $("#button-masuk").show();
@@ -40,8 +26,4 @@ $(document).ready(function() {
 
         $("#menu-akun-login").hide();
     }
-    
-    $("#button-simpanan").click(function() {
-        window.location.href = "./simpanan.html";
-    });
 });

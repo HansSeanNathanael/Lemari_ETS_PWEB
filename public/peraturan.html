@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lemari</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+		<link rel="stylesheet" type="text/css" href="./css/font.css">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <div class="col-md-12 m-0 p-0" id="header">
+            <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+                <div class="container">
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    <ul class="nav navbar-nav ms-auto w-auto justify-content-end">
+                        <li class="nav-item" id="button-masuk">
+                            <button id="button-masuk" class="btn btn-dark primary-font">Masuk</button>
+                        </li>
+                        <li class="nav-item dropdown" id="dropdown-button-akun">
+                            <a class="nav-link" id="dropdown-akun" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <div id="nama-akun" class="primary-font d-flex align-items-center">Akun</div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-akun">
+                                <li><button id="button-kelola-akun" class="dropdown-item primary-font fs-6">Kelola akun</button></li>
+                                <li><p class="dropdown-item primary-font fs-6">Simpanan: Rp 12.000.000,-</p></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><button id="button-keluar" class="dropdown-item primary-font fs-6">Keluar</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <hr class="m-0"/>
+        <div class="row m-0 flex-grow-1">
+        </div>
+        <div class="p-0 m-0" style="background-color: #e3ffb0;" id="footer">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Lemari</h5>
+                        <p style="color: #1f1f1f">
+                            Kami adalah koperasi simpan pinjam yang memiliki misi untuk memberikan layanan simpan pinjam yang terbaik bagi semua anggota.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="mb-3 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Pertanyaan</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Dasar Hukum</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #1f1f1f;">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="mb-1 fs-5 fw-bold" style="letter-spacing: 2px; color: #636363;">Jam kerja</p>
+                        <table class="table" style="color: #1f1f1f; border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Setiap hari:</td>
+                                    <td>08.00 - 21.00 WIB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: #ffd77a;">
+                © 2022 Copyright: Lemari</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="./peraturan.js"></script>
+    </body>
+</html>
