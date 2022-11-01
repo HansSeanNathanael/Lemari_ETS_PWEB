@@ -32,4 +32,8 @@ $(document).ready(function() {
 
         $("#menu-akun-login").hide();
     }
+
+    $("#button-syarat-pinjaman").click(function() {
+        window.location.href = "./peraturan.html#pinjaman";
+    });
 });

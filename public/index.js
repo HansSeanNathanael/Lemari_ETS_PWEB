@@ -8,10 +8,6 @@ $(document).ready(function() {
 
     });
 
-    $("#halaman-pertaruan").click(function() {
-        window.location.href = "./peraturan.html";
-    });
-
     $("#button-bergabung").click(function() {
         window.location.href = "./bergabung.html";
     });
@@ -51,5 +47,13 @@ $(document).ready(function() {
 
     $("#button-dasar-hukum").click(function() {
         window.location.href = "./hukum.html";
+    });
+
+    $("#button-pertaruan").click(function() {
+        window.location.href = "./peraturan.html";
+    });
+
+    $("#button-hak-dan-kewajiban").click(function() {
+        window.location.href = "./hak-kewajiban.html";
     });
 });
