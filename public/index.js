@@ -56,4 +56,8 @@ $(document).ready(function() {
     $("#button-hak-dan-kewajiban").click(function() {
         window.location.href = "./hak-kewajiban.html";
     });
+
+    $("#button-lokasi").click(function() {
+        window.location.href = "./lokasi.html";
+    });
 });
