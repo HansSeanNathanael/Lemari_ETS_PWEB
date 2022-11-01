@@ -1,12 +1,9 @@
-body {
-    background-color: bisque;
+.dasar-hukum {
+    font-size: large;
+    text-align: justify;
 }
 
 .dasar-hukum > h1 {
     text-align: center;
 }
 
-.dasar-hukum {
-    font-size: large;
-    text-align: justify;
-}
