@@ -49,7 +49,7 @@ $(document).ready(function() {
         window.location.href = "./hukum.html";
     });
 
-    $("#button-pertaruan").click(function() {
+    $("#button-peraturan").click(function() {
         window.location.href = "./peraturan.html";
     });
 

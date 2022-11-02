@@ -26,4 +26,12 @@ $(document).ready(function() {
 
         $("#menu-akun-login").hide();
     }
+
+    $("#button-peraturan").click(function() {
+        window.location.href = "./peraturan.html";
+    });
+
+    $("#button-lokasi").click(function() {
+        window.location.href = "./lokasi.html";
+    });
 });
