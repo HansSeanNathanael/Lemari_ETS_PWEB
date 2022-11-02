@@ -4,8 +4,12 @@ $(document).ready(function() {
         window.location.href = "./login.html";
     });
     
-    $("#button-kelola-akun").click(function() {
-
+    $("#button-detail-simpanan").click(function() {
+        window.location.href = "./simpanan.html";
+    });
+    
+    $("#button-detail-pinjaman").click(function() {
+        window.location.href = "./pinjaman.html";
     });
 
     $("#button-bergabung").click(function() {
@@ -15,10 +19,6 @@ $(document).ready(function() {
     $("#button-keluar").click(function() {
         sessionStorage.removeItem("akun");
         window.location.reload();
-    });
-
-    $("#button-blog").click(function() {
-        window.location.href = "./blog.html";
     });
 
     if (sessionStorage.getItem("akun") != null) {
@@ -45,6 +45,9 @@ $(document).ready(function() {
         window.location.href = "./pinjaman.html";
     });
 
+    $("#button-laporan").click(function() {
+        window.location.href = "./laporan.html";
+    });
     $("#button-dasar-hukum").click(function() {
         window.location.href = "./hukum.html";
     });
@@ -59,5 +62,9 @@ $(document).ready(function() {
 
     $("#button-lokasi").click(function() {
         window.location.href = "./lokasi.html";
+    });
+
+    $("#button-blog").click(function() {
+        window.location.href = "./blog.html";
     });
 });

@@ -8,6 +8,7 @@
         <script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.js"></script>
         <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/font.css">
+		<link rel="stylesheet" type="text/css" href="./css/laporan.css">
     </head>
     <body class="d-flex flex-column min-vh-100">
         <div class="col-md-12 m-0 p-0" id="header">
@@ -41,62 +42,76 @@
         <div class="row mx-0 my-4 flex-grow-1">
             <div class="w-100 m-0 d-flex justify-content-center">
                 <div class="col-md-10">
-                    <p class="fs-3 fw-bold primary-font text-center">Simpanan</p>
+                    <p class="fs-3 fw-bold primary-font text-center">Laporan Bagi Hasil</p>
                     <div class="row">
                         <p class="fs-5 primary-font my-0" id="nama-akun-simpanan"></p>
                         <div class="d-flex">
                             <div class="w-auto">
-                                <p class="fs-6 primary-font my-0">Nomor Anggota</p>
-                                <p class="fs-6 primary-font my-0">Simpanan </p>
-                                <p class="fs-6 primary-font my-0">Pinjaman </p>
+                                <p class="fs-6 primary-font my-0">Keuntungan</p>
+                                <p class="fs-6 primary-font my-0">Nomor Anggota </p>
+                                <p class="fs-6 primary-font my-0">Nilai Kontribusi</p>
                             </div>
                             <div class="w-auto mx-3">
+                                <p class="fs-6 primary-font my-0">Rp 801.120.000,-</p>
                                 <p class="fs-6 primary-font my-0">#202104010001</p>
-                                <p class="fs-6 primary-font my-0">Rp 12.000.000,-</p>
-                                <p class="fs-6 primary-font my-0">Rp 0,-</p>
+                                <p class="fs-6 primary-font my-0">3.641.000</p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between mt-5">
-                            <p class="fs-6 primary-font">Rentang Waktu <input type="month"/> sampai <input type="month"/></p>
-                            <p>Perubahan: Rp +910.000,-</p>
-                        </div>
                     </div>
-                    <table class="table text-center">
-                        <thead>
-                            <tr>
-                                <th scope="col">Tanggal</th>
-                                <th scope="col">Bentuk Simpanan</th>
-                                <th scope="col">Nominal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>February 2022</td>
-                                <td>Penarikan</td>
-                                <td>Rp -200.000</td>
-                            </tr>
-                            <tr>
-                                <td>February 2022</td>
-                                <td>Sukarela</td>
-                                <td>Rp 1.000.000</td>
-                            </tr>
-                            <tr>
-                                <td>February 2022</td>
-                                <td>Wajib</td>
-                                <td>Rp 5.000</td>
-                            </tr>
-                            <tr>
-                                <td>January 2022</td>
-                                <td>Wajib</td>
-                                <td>Rp 5.000</td>
-                            </tr>
-                            <tr>
-                                <td>January 2022</td>
-                                <td>Pokok</td>
-                                <td>Rp 100.000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ul class="ul-none my-4">
+                        <li class="li-bold fs-5 my-2">
+                            <p class="fs-5 fw-bold primary-font m-0">Perhitungan Nilai Kontribusi</p>
+                            <table class="table table-bordered border-dark text-center fs-6">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nominal</th>
+                                        <th scope="col">Bentuk Simpanan</th>
+                                        <th scope="col">Kontribusi</th>
+                                        <th scope="col">Total hari</th>
+                                        <th scope="col">Nilai Kontribusi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Rp 50.000,-</td>
+                                        <td>Wajib</td>
+                                        <td>10%</td>
+                                        <td>365</td>
+                                        <td>5.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rp 120.000,-</td>
+                                        <td>Pokok</td>
+                                        <td>30%</td>
+                                        <td>365</td>
+                                        <td>36.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rp 6.000.000,-</td>
+                                        <td>Sukarela</td>
+                                        <td>20%</td>
+                                        <td>365</td>
+                                        <td>1.200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rp 6.000.000,-</td>
+                                        <td>Sukarela Berjangka</td>
+                                        <td>40%</td>
+                                        <td>365</td>
+                                        <td>2.400.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="li-bold fs-5 my-2">
+                            <p class="fs-5 fw-bold primary-font m-0">Total Kontribusi Semua Anggota</p>
+                            <p class="fs-6 m-0 primary-font">Total Kontribusi Semua Anggota: 6.024.640.000</p>
+                        </li>
+                        <li class="li-bold fs-5 my-2">
+                            <p class="fs-5 fw-bold primary-font m-0">Bagi Hasil</p>
+                            <p class="fs-6 m-0 primary-font">Bagi hasil: Rp 484.158</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -143,6 +158,6 @@
                 © 2022 Copyright: Lemari</a>
             </div>
         </div>
-        <script type="text/javascript" src="./simpanan.js"></script>
+        <script type="text/javascript" src="./laporan.js"></script>
     </body>
 </html>

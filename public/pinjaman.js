@@ -4,24 +4,23 @@ $(document).ready(function() {
         window.location.href = "./login.html";
     });
     
-    $("#button-kelola-akun").click(function() {
-
+    $("#button-detail-simpanan").click(function() {
+        window.location.href = "./simpanan.html";
     });
-
-    $("#halaman-pertaruan").click(function() {
-        window.location.href = "./peraturan.html";
+    
+    $("#button-detail-pinjaman").click(function() {
+        window.location.href = "./pinjaman.html";
     });
     
     $("#button-keluar").click(function() {
         sessionStorage.removeItem("akun");
-        window.location.reload();
+        window.location.href = "./index.html";
     });
 
     if (sessionStorage.getItem("akun") != null) {
         $("#button-masuk").hide();
         $("#dropdown-button-akun").show();
 
-        $("#menu-akun-login").show();
         $("#nama-akun").html(sessionStorage.getItem("akun"));
 
         $("#nama-akun-simpanan").html(sessionStorage.getItem("akun"));
@@ -30,7 +29,6 @@ $(document).ready(function() {
         $("#button-masuk").show();
         $("#dropdown-button-akun").hide();
 
-        $("#menu-akun-login").hide();
     }
 
     $("#button-syarat-pinjaman").click(function() {

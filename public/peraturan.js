@@ -4,9 +4,17 @@ $(document).ready(function() {
         window.location.href = "./login.html";
     });
     
+    $("#button-detail-simpanan").click(function() {
+        window.location.href = "./simpanan.html";
+    });
+    
+    $("#button-detail-pinjaman").click(function() {
+        window.location.href = "./pinjaman.html";
+    });
+    
     $("#button-keluar").click(function() {
         sessionStorage.removeItem("akun");
-        window.location.reload();
+        window.location.href = "./index.html";
     });
 
     if (sessionStorage.getItem("akun") != null) {
